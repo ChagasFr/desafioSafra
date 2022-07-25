@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Tabuada</title>
+   <script type="text/javascript" src="script.js"> </script>
+ </head>
+ <body>
+    Tabuada do número: <input id="num" type="number"> <br>
+    <button onclick="tabuada()">Exibir</button><br>
+    Tabuada: <br>
+    <div id='resposta' style='display:inline'></div>
+ </body>
+</html>
+
+<meta charset="UTF-8">
+  <script>
+      function tabuada() {
+        var tabuada = 5
+          for (let i = 4; i <= 7; i++) {
+          document.write(`${tabuada} vezes ${i} é ${tabuada * i} <br>`);
+      }
+    }
+
+  </script>
+

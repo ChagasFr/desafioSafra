@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Troca Destroca</title>
+   <script type="text/javascript" src="script.js"> </script>
+ </head>
+ <body>
+    <button onclick="troca()">troca destroca</button><br>
+    <div id='resposta' style='display:inline'></div>
+ </body>
+</html>
+
+<meta charset="UTF-8">
+  <script>
+      function troca() {
+        var a = parseInt(prompt("digite um numero"));
+        var b = parseInt(prompt("digite um numero"));
+        
+        alert("inicial: "+a+" "+b);
+
+        var auxiliar = a;
+        a = b;
+        b = auxiliar;
+        
+        alert("final: "+a+" "+b);
+
+    }
+
+  </script>
