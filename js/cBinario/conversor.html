@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang=“pt-br”>
+
+<head>
+	<title>conversor Binario</title>
+	<meta charset=“UTF-8”>
+	<script>
+
+		function conversor() {
+			var valorDecimal = document.getElementById("decimal").value;
+			if (valorDecimal) {
+				valorDecimal = parseInt(valorDecimal).toString();
+				document.getElementById("binario").value = valorDecimal;
+			} else {
+				document.getElementById("binario").value = "Digite:";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form name="pImc">
+		<label>number</label><br>
+		<input type="text" name="v_alt" value="0"><br><br>
+		<label>resultado</label><br>
+		<input type="text" name="v_alt" value="0"><br><br>
+		<input type="button" value="Calcular" onclick="binario()">
+	</form>
+	<br>
+
+</body>
+
+</html>

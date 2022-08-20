@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title>fatorial</title>
-   <script type="text/javascript" src="script.js"> </script>
- </head>
- <body>
-    calculando fatorial <input id="num" type="number"> <br>
-    <button onclick="tabuada()">Exibir</button><br>
-    fatorial: <br>
-    <div id='resposta' style='display:inline'></div>
- </body>
+
+<head>
+  <title>fatorial</title>
+  <script type="text/javascript" src="script.js"> </script>
+</head>
+
+<body>
+  calculando fatorial <input id="num" type="number"> <br>
+  <button onclick="tabuada()">Exibir</button><br>
+  fatorial: <br>
+  <div id='resposta' style='display:inline'></div>
+</body>
+
 </html>
 
 <meta charset="UTF-8">
 <script>
 
-var fatorial = N;
+  function fat() {
+    number = document.getElementById("fatorial").value.split("");
+    if (number != "" && numero.length > 1) {
+      var result = 1;
 
-    for (i = 1; i < 1; i++) {
-        fatorial = fatorial * (N - i);
+      for (i = 0; i < number.length; i++) {
+        result *= parseInt(number[i]);
+      }
+      document.getElementById("resposta").innerHTML = `resposta: ${result}`
+    } else {
+
     }
-    alert(n + "! ="+ fatorial);
+  }
 
 </script>
